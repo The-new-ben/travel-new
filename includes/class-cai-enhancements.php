@@ -13,7 +13,7 @@ class CAI_Enhancements {
         add_shortcode('cai_updated', [$this,'updated']);
         add_shortcode('cai_cluster', [$this,'cluster_name']);
         add_shortcode('cai_cluster_posts', [$this,'cluster_posts']);
-    
+    }
 
     public function author_box(){
         if (!is_singular()) return '';
@@ -76,8 +76,6 @@ class CAI_Enhancements {
         wp_reset_postdata();
         return $html;
     }
-
-}
 
     // Simple Table of Contents from the_content
     public function toc($atts = []){
